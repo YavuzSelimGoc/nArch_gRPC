@@ -1,0 +1,119 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Features\" />
+    <None Remove="Features\Brands\" />
+    <None Remove="Features\Brands\Commands\" />
+    <None Remove="Features\Brands\Queries\" />
+    <None Remove="Features\Brands\Profiles\" />
+    <None Remove="Features\Brands\Constants\" />
+    <None Remove="Features\Brands\Rules\" />
+    <None Remove="Features\Models\" />
+    <None Remove="Features\Models\Commends\" />
+    <None Remove="Features\Brands\Commands\Create\" />
+    <None Remove="Features\Brands\Commands\Update\" />
+    <None Remove="Features\Brands\Commands\Delete\" />
+    <None Remove="Services\" />
+    <None Remove="Services\Repositories\" />
+    <None Remove="Features\Brands\Queries\GetList\" />
+    <None Remove="Features\Brands\Queries\GetById\" />
+    <None Remove="Features\Models\Constants\" />
+    <None Remove="Features\Models\Queries\" />
+    <None Remove="Features\Models\Profiles\" />
+    <None Remove="Features\Models\Rules\" />
+    <None Remove="Features\Models\Queries\GetList\" />
+    <None Remove="Features\Models\Queries\GetListByDynamic\" />
+    <None Remove="Features\Users\" />
+    <None Remove="Features\Users\Commands\" />
+    <None Remove="Features\Users\Constants\" />
+    <None Remove="Features\Users\Profiles\" />
+    <None Remove="Features\Users\Rules\" />
+    <None Remove="Features\Users\Commands\Create\" />
+    <None Remove="Features\Auth\" />
+    <None Remove="Features\Auth\Constants\" />
+    <None Remove="Features\Category\" />
+    <None Remove="Features\Category\Commands\" />
+    <None Remove="Features\Category\Queries\" />
+    <None Remove="Features\Category\Commands\Create\" />
+    <None Remove="Features\Category\Profiles\" />
+    <None Remove="Features\SubCategory\" />
+    <None Remove="Features\SubCategory\Commands\" />
+    <None Remove="Features\SubCategory\Queries\" />
+    <None Remove="Features\SubCategory\Profiles\" />
+    <None Remove="Features\SubCategory\Commands\Create\" />
+    <None Remove="Features\SubCategory\Queries\GetList\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="Features\Brands\" />
+    <Folder Include="Features\Brands\Commands\" />
+    <Folder Include="Features\Brands\Queries\" />
+    <Folder Include="Features\Brands\Profiles\" />
+    <Folder Include="Features\Brands\Constants\" />
+    <Folder Include="Features\Brands\Rules\" />
+    <Folder Include="Features\Models\" />
+    <Folder Include="Features\Models\Commends\" />
+    <Folder Include="Features\Brands\Commands\Create\" />
+    <Folder Include="Features\Brands\Commands\Update\" />
+    <Folder Include="Features\Brands\Commands\Delete\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Repositories\" />
+    <Folder Include="Features\Brands\Queries\GetList\" />
+    <Folder Include="Features\Brands\Queries\GetById\" />
+    <Folder Include="Features\Models\Constants\" />
+    <Folder Include="Features\Models\Queries\" />
+    <Folder Include="Features\Models\Profiles\" />
+    <Folder Include="Features\Models\Rules\" />
+    <Folder Include="Features\Models\Queries\GetList\" />
+    <Folder Include="Features\Models\Queries\GetListByDynamic\" />
+    <Folder Include="Features\Users\" />
+    <Folder Include="Features\Users\Commands\" />
+    <Folder Include="Features\Users\Constants\" />
+    <Folder Include="Features\Users\Profiles\" />
+    <Folder Include="Features\Users\Rules\" />
+    <Folder Include="Features\Users\Commands\Create\" />
+    <Folder Include="Features\Auth\" />
+    <Folder Include="Features\Auth\Constants\" />
+    <Folder Include="Features\Category\" />
+    <Folder Include="Features\Category\Commands\" />
+    <Folder Include="Features\Category\Queries\" />
+    <Folder Include="Features\Category\Commands\Create\" />
+    <Folder Include="Features\Category\Profiles\" />
+    <Folder Include="Features\SubCategory\" />
+    <Folder Include="Features\SubCategory\Commands\" />
+    <Folder Include="Features\SubCategory\Queries\" />
+    <Folder Include="Features\SubCategory\Profiles\" />
+    <Folder Include="Features\SubCategory\Commands\Create\" />
+    <Folder Include="Features\SubCategory\Queries\GetList\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.15" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Core.Application">
+      <HintPath>..\..\..\corePackages\Core.Packages\Core.Application\bin\Debug\net7.0\Core.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Persistence">
+      <HintPath>..\..\..\corePackages\Core.Packages\Core.Persistence\bin\Debug\net7.0\Core.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=7.0.15.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" />
+    <Reference Include="Core.CrossCuttingConcerns">
+      <HintPath>..\..\..\corePackages\Core.Packages\Core.CrossCuttingConcerns\bin\Debug\net7.0\Core.CrossCuttingConcerns.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Security">
+      <HintPath>..\..\..\corePackages\Core.Packages\Core.Security\bin\Debug\net7.0\Core.Security.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
